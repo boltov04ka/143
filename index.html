@@ -525,6 +525,45 @@
     background: var(--site-bg);
   }
 
+  .site-footer {
+    border-top: 1px solid var(--line);
+    background: var(--site-bg);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: min(100%, var(--content-width));
+    margin: 0 auto;
+    padding: 28px 36px 22px;
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .footer-main,
+  .footer-brand,
+  .footer-nav,
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-brand { gap: 12px; min-width: 0; }
+  .footer-brand > div { display: flex; flex-direction: column; gap: 4px; }
+  .footer-mark { color: var(--accent); font-size: 22px; font-weight: 800; letter-spacing: 0.04em; }
+  .footer-brand strong { font-size: 15px; }
+  .footer-note, .footer-bottom { color: #a49f9a; font-size: 13px; line-height: 1.5; }
+  .footer-nav { flex-wrap: wrap; justify-content: flex-end; gap: 10px 20px; }
+  .footer-nav a { color: #d4d0ca; font-size: 14px; text-decoration: none; transition: color 180ms ease; }
+  .footer-nav a:hover, .footer-nav a:focus-visible { color: var(--accent); }
+  .footer-bottom { padding-top: 14px; border-top: 1px solid var(--line); }
   .support-inner {
     display: flex;
     flex-direction: column;
@@ -666,7 +705,46 @@
       padding: 20px 18px;
     }
 
-    .support-inner {
+    .site-footer {
+    border-top: 1px solid var(--line);
+    background: var(--site-bg);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: min(100%, var(--content-width));
+    margin: 0 auto;
+    padding: 28px 36px 22px;
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .footer-main,
+  .footer-brand,
+  .footer-nav,
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-brand { gap: 12px; min-width: 0; }
+  .footer-brand > div { display: flex; flex-direction: column; gap: 4px; }
+  .footer-mark { color: var(--accent); font-size: 22px; font-weight: 800; letter-spacing: 0.04em; }
+  .footer-brand strong { font-size: 15px; }
+  .footer-note, .footer-bottom { color: #a49f9a; font-size: 13px; line-height: 1.5; }
+  .footer-nav { flex-wrap: wrap; justify-content: flex-end; gap: 10px 20px; }
+  .footer-nav a { color: #d4d0ca; font-size: 14px; text-decoration: none; transition: color 180ms ease; }
+  .footer-nav a:hover, .footer-nav a:focus-visible { color: var(--accent); }
+  .footer-bottom { padding-top: 14px; border-top: 1px solid var(--line); }
+  .support-inner {
       gap: 22px;
       padding: 48px 16px 56px;
     }
@@ -722,7 +800,7 @@
       <span>Добро пожаловать в</span>
       <span class="logo-frame"><img src="assets/logo-143.png" alt="143"></span>
     </h1>
-    <p>Дисциплина, сила и бескомпромиссная борьба. Мы ценим командную работу, уважаем сильных соперников и всегда готовы доказать своё превосходство на поле боя.</p>
+    <p class="intro-copy">Дисциплина, сила и бескомпромиссная борьба. Мы ценим командную работу, уважаем сильных соперников и всегда готовы доказать своё превосходство на поле боя.</p>
     <section class="characters" aria-label="Персонажи клана">
       <div class="character-card" tabindex="0">
         <img src="assets/character-1.png" alt="Персонаж клана 1">
@@ -818,6 +896,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
